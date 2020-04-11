@@ -18,7 +18,7 @@ ionic cordova plugin add cordova-plugin-file
 
 **Add `IonicImageLoaderModule` and `WebView` in your app's root module**
 ```typescript
-import { IonicImageLoader } from 'ionic-image-loader-v5';
+import { IonicImageLoaderModule } from 'ionic-image-loader-v5';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 
 // import the module

@@ -65,7 +65,7 @@ You can also listen to the load event to be notified when the image has been loa
 <img-loader src="path/to/image" (load)="onImageLoad($event)></img-loader>
 ```
 ```typescript
-import { ImgLoaderComponent } from 'ionic-image-loader';
+import { ImgLoaderComponent } from 'ionic-image-loader-v5';
 
 ...
 
@@ -111,7 +111,7 @@ In **./src/index.html** move your `polyfill.js`include above `cordova.js`
 # Global Configuration
 This is optional but it is helpful if you wish to set the global configuration for all of your `<img-loader>` instances. To configure the module, inject the `ImageLoaderConfigService` provider in your app's main component.
 ```typescript
-import { ImageLoaderConfigService } from 'ionic-image-loader';
+import { ImageLoaderConfigService } from 'ionic-image-loader-v5';
 @Component({
 ...
 })
@@ -287,7 +287,7 @@ this.imageLoaderConfig.setFallbackFileNameCachedExtension('.png');
 
 # Preloading images
 ```typescript
-import { ImageLoaderService } from 'ionic-image-loader';
+import { ImageLoaderService } from 'ionic-image-loader-v5';
 
 class MyComponent {
   
@@ -302,7 +302,7 @@ class MyComponent {
 # Clearing the cache
 ```typescript
 
-import { ImageLoaderService } from 'ionic-image-loader';
+import { ImageLoaderService } from 'ionic-image-loader-v5';
 
 @Component(...)
 class MyComponent {
@@ -318,7 +318,7 @@ class MyComponent {
 # Clearing single image cache
 ```typescript
 
-import { ImageLoaderService } from 'ionic-image-loader';
+import { ImageLoaderService } from 'ionic-image-loader-v5';
 
 @Component(...)
 class MyComponent {
@@ -339,7 +339,7 @@ Usage:
 
 1. Include the ImageAttribute model in your .ts
 ```typescript
-import { ImageAttribute } from 'ionic-image-loader'
+import { ImageAttribute } from 'ionic-image-loader-v5'
 ```
 
 2. Generate an array of ImageAttribute objects
